@@ -53,7 +53,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Pages\FlyoutMenuPage.xaml.cs">
+	    <DependentUpon>FlyoutMenuPage.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Update="Pages\AppFlyout.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\FlyoutMenuPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
